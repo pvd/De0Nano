@@ -1,0 +1,96 @@
+m255
+K3
+13
+cModel Technology
+dC:\altera\13.0sp1
+Equad_tester
+Z0 w1391972296
+Z1 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z2 DPx8 synopsys 10 attributes 0 22 J^T`lPA_8_J<l8kQiVE]>2
+Z3 DPx4 ieee 14 std_logic_misc 0 22 >dU:RInm^_6_mBJ^<6QGY2
+Z4 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z5 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z6 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z7 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z8 dC:\Users\Peter\Documents\De0Nano\QuadTest
+Z9 8C:/Users/Peter/Documents/De0Nano/QuadTest/quad_test.vhd
+Z10 FC:/Users/Peter/Documents/De0Nano/QuadTest/quad_test.vhd
+l0
+L9
+V=BjfliN7AQ@@:3ick7Oe@3
+!s100 [1PX9WmiMWA8A?of:i`Z_1
+Z11 OV;C;10.1d;51
+32
+!i10b 1
+Z12 !s108 1391972583.243000
+Z13 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Peter/Documents/De0Nano/QuadTest/quad_test.vhd|
+Z14 !s107 C:/Users/Peter/Documents/De0Nano/QuadTest/quad_test.vhd|
+Z15 o-work work -2002 -explicit -O0
+Z16 tExplicit 1
+Asyn
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+Z17 DEx4 work 11 quad_tester 0 22 =BjfliN7AQ@@:3ick7Oe@3
+l23
+L19
+Z18 VFSh:BQOKF^@N5CT:lTz_W2
+Z19 !s100 371WSCW[D8jf;n[71Rg2g2
+R11
+32
+!i10b 1
+R12
+R13
+R14
+R15
+R16
+Equad_tester_tb
+Z20 w1391972572
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+Z21 8C:/Users/Peter/Documents/De0Nano/QuadTest/example_tb.vhd
+Z22 FC:/Users/Peter/Documents/De0Nano/QuadTest/example_tb.vhd
+l0
+L9
+VCa6O6kj6X_JbGeP;0@?=Y1
+R11
+32
+Z23 !s108 1391972582.983000
+Z24 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Peter/Documents/De0Nano/QuadTest/example_tb.vhd|
+Z25 !s107 C:/Users/Peter/Documents/De0Nano/QuadTest/example_tb.vhd|
+R15
+R16
+!s100 OG8LR76Li`]UCQWUnIBa01
+!i10b 1
+Abeh
+R17
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 14 quad_tester_tb 0 22 Ca6O6kj6X_JbGeP;0@?=Y1
+l17
+L12
+VQMDW?i71^oT0HoF>_RBZ91
+R11
+32
+R23
+R24
+R25
+R15
+R16
+!s100 =[@6GC`YD[a5@F4bk?FhW3
+!i10b 1

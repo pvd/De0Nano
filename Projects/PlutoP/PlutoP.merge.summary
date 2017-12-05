@@ -1,0 +1,14 @@
+Partition Merge Status : Successful - Sat Feb 08 21:13:33 2014
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+Revision Name : PlutoP
+Top-level Entity Name : PlutoP
+Family : Cyclone IV E
+Total logic elements : 1,228
+    Total combinational functions : 685
+    Dedicated logic registers : 926
+Total registers : 926
+Total pins : 31
+Total virtual pins : 0
+Total memory bits : 212,992
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 1

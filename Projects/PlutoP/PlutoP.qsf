@@ -1,0 +1,208 @@
+#============================================================
+# Build by Terasic System Builder
+#============================================================
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE22F17C6
+set_global_assignment -name TOP_LEVEL_ENTITY PlutoP
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "12.0"
+set_global_assignment -name LAST_QUARTUS_VERSION 10.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "21:28:37 DECEMBER 16,2013"
+set_global_assignment -name DEVICE_FILTER_PACKAGE FBGA
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 256
+set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 6
+
+#============================================================
+# CLOCK
+#============================================================
+set_location_assignment PIN_R8 -to CLOCK_50
+
+#============================================================
+# LED
+#============================================================
+
+#============================================================
+# KEY
+#============================================================
+
+#============================================================
+# SW
+#============================================================
+
+#============================================================
+# GPIO_0, GPIO_0 connect to GPIO Default
+#============================================================
+
+#============================================================
+# GPIO_1, GPIO_1 connect to GPIO Default
+#============================================================
+
+#============================================================
+# End of pin assignments by Terasic System Builder
+#============================================================
+
+
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_D8 -to eppAddrStr
+set_location_assignment PIN_A5 -to eppData[7]
+set_location_assignment PIN_D5 -to eppData[6]
+set_location_assignment PIN_B6 -to eppData[5]
+set_location_assignment PIN_A6 -to eppData[4]
+set_location_assignment PIN_B7 -to eppData[3]
+set_location_assignment PIN_D6 -to eppData[2]
+set_location_assignment PIN_A7 -to eppData[1]
+set_location_assignment PIN_C6 -to eppData[0]
+set_location_assignment PIN_E6 -to eppDataStr
+set_location_assignment PIN_E7 -to eppReset
+set_location_assignment PIN_E8 -to eppWait
+set_location_assignment PIN_C8 -to eppWrite
+set_location_assignment PIN_T9 -to quadXA
+set_location_assignment PIN_R9 -to quadXB
+set_location_assignment PIN_R11 -to pwmX
+set_location_assignment PIN_T10 -to dirX
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to eppAddrStr
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to eppData[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to eppData[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to eppData[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to eppData[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to eppData[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to eppData[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to eppData[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to eppData[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to eppDataStr
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to eppReset
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to eppWait
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to eppWrite
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to pwmX
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to quadXA
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to quadXB
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to dirX
+set_global_assignment -name ENABLE_SIGNALTAP ON
+set_global_assignment -name USE_SIGNALTAP_FILE Pluto.stp
+set_global_assignment -name SLD_NODE_CREATOR_ID 110 -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_ENTITY_NAME sld_signaltap -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_clk -to CLOCK_50 -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_NODE_INFO=805334528" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_POWER_UP_TRIGGER=0" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ATTRIBUTE_MEM_MODE=OFF" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STATE_FLOW_USE_GENERATED=0" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STATE_BITS=11" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_BUFFER_FULL_STOP=1" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_CURRENT_RESOURCE_WIDTH=1" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_LEVEL=1" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_IN_ENABLED=0" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_LEVEL_PIPELINE=1" -section_id auto_signaltap_0
+set_location_assignment PIN_J15 -to PUSH1
+set_location_assignment PIN_L3 -to LED7
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to PUSH1
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED7
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CLOCK_50
+set_location_assignment PIN_M1 -to DIP0
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DIP0
+set_location_assignment PIN_B1 -to LED6
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED6
+set_location_assignment PIN_A15 -to LED0
+set_location_assignment PIN_A13 -to LED1
+set_location_assignment PIN_B13 -to LED2
+set_location_assignment PIN_A11 -to LED3
+set_location_assignment PIN_D1 -to LED4
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED4
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED3
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED1
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED0
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED2
+set_location_assignment PIN_F13 -to quadYA
+set_location_assignment PIN_T15 -to quadYB
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to quadYA
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to quadYB
+set_location_assignment PIN_P11 -to dirY
+set_location_assignment PIN_R10 -to pwmY
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to pwmY
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to dirY
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ADVANCED_TRIGGER_ENTITY=basic,1," -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ENABLE_ADVANCED_TRIGGER=0" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STORAGE_QUALIFIER_INVERSION_MASK_LENGTH=0" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_SEGMENT_SIZE=16384" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_SAMPLE_DEPTH=16384" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[14] -to "quad_tester:inst9|counter_i[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[15] -to "quad_tester:inst9|counter_i[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[16] -to "quad_tester:inst9|counter_i[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[17] -to "quad_tester:inst9|counter_i[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[18] -to "quad_tester:inst9|counter_i[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[19] -to "quad_tester:inst9|counter_i[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[20] -to "quad_tester:inst9|counter_i[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[21] -to "quad_tester:inst9|counter_i[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[22] -to "quad_tester:inst9|counter_i[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[23] -to "quad_tester:inst9|counter_i[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[24] -to "quad_tester:inst9|counter_i[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[25] -to "quad_tester:inst9|counter_i[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[26] -to "quad_tester:inst9|counter_i[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[27] -to "quad_tester:inst9|counter_i[9]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[28] -to "quad_tester:inst9|gapDetect_i" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[29] -to "quad_tester:inst9|update_i" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[14] -to "quad_tester:inst9|counter_i[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[15] -to "quad_tester:inst9|counter_i[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[16] -to "quad_tester:inst9|counter_i[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[17] -to "quad_tester:inst9|counter_i[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[18] -to "quad_tester:inst9|counter_i[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[19] -to "quad_tester:inst9|counter_i[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[20] -to "quad_tester:inst9|counter_i[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[21] -to "quad_tester:inst9|counter_i[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[22] -to "quad_tester:inst9|counter_i[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[23] -to "quad_tester:inst9|counter_i[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[24] -to "quad_tester:inst9|counter_i[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[25] -to "quad_tester:inst9|counter_i[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[26] -to "quad_tester:inst9|counter_i[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[27] -to "quad_tester:inst9|counter_i[9]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[28] -to "quad_tester:inst9|gapDetect_i" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[29] -to "quad_tester:inst9|update_i" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_DATA_BITS=30" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_BITS=30" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK=0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK_LENGTH=118" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_NODE_CRC_HIWORD=56192" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[0] -to "quad_tester:inst9|counter[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[1] -to "quad_tester:inst9|counter[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[2] -to "quad_tester:inst9|counter[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[3] -to "quad_tester:inst9|counter[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[4] -to "quad_tester:inst9|counter[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[5] -to "quad_tester:inst9|counter[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[6] -to "quad_tester:inst9|counter[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[7] -to "quad_tester:inst9|counter[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[8] -to "quad_tester:inst9|counter[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[9] -to "quad_tester:inst9|counter[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[10] -to "quad_tester:inst9|counter[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[11] -to "quad_tester:inst9|counter[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[12] -to "quad_tester:inst9|counter[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[13] -to "quad_tester:inst9|counter[9]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[0] -to "quad_tester:inst9|counter[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[1] -to "quad_tester:inst9|counter[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[2] -to "quad_tester:inst9|counter[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[3] -to "quad_tester:inst9|counter[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[4] -to "quad_tester:inst9|counter[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[5] -to "quad_tester:inst9|counter[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[6] -to "quad_tester:inst9|counter[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[7] -to "quad_tester:inst9|counter[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[8] -to "quad_tester:inst9|counter[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[9] -to "quad_tester:inst9|counter[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[10] -to "quad_tester:inst9|counter[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[11] -to "quad_tester:inst9|counter[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[12] -to "quad_tester:inst9|counter[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[13] -to "quad_tester:inst9|counter[9]" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_NODE_CRC_LOWORD=2116" -section_id auto_signaltap_0
+set_global_assignment -name VHDL_FILE lowPassFilter.vhd
+set_global_assignment -name VERILOG_FILE pluto_servo.v
+set_global_assignment -name VERILOG_FILE wdt.v
+set_global_assignment -name VERILOG_FILE quad.v
+set_global_assignment -name BDF_FILE PlutoP.bdf
+set_global_assignment -name QIP_FILE Clock40Mhz.qip
+set_global_assignment -name SDC_FILE PlutoP.sdc
+set_global_assignment -name QIP_FILE wait_mux.qip
+set_global_assignment -name VHDL_FILE quad_test.vhd
+set_global_assignment -name QIP_FILE MotorEnable.qip
+
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
